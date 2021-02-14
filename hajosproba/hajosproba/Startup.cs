@@ -26,8 +26,15 @@ namespace hajosproba
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+            
 
+            app.UseHttpsRedirection();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+            /*
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
@@ -35,6 +42,7 @@ namespace hajosproba
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+            */
         }
     }
 }
