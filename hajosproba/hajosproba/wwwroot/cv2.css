@@ -1,0 +1,95 @@
+﻿body {
+    font-weight: bold;
+    text-align: center;
+}
+/*
+div {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid fuchsia;
+    border-radius: 25px;
+}
+*/
+h1,
+h2 {
+    text-align: center;
+    color: gold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: teal;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: mediumseagreen;
+    font-size: 40px;
+}
+
+#header {
+    background-color: teal;
+}
+#main {
+    display: flex;
+}
+#szoveg {
+    text-align: center;
+    background-color: gold;
+    padding: 20px;
+    display: flex;
+    color:teal;
+}
+
+#tarto {
+    background-color: cadetblue;
+    padding: 20px;
+}
+#pic {
+    background-color:steelblue;
+    padding: 20px;
+}
+.crypto {
+    background-color: white;
+    width: 150px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+}
+
+#header {
+    order: -1;
+}
+#szoveg{
+    flex: 1 1 75%;
+}
+#tarto {
+    flex: 1 1 75%;
+}
