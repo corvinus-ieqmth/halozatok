@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="külső">
+        <div id="kérdés_szöveg">
+            Kérdés szövege
+        </div>
+
+        <div id="középső">
+            <div id="válaszok">
+                <div id="válasz1" class="kerdes kattintható">Válasz 1</div>
+                <div id="válasz2" class="kerdes kattintható jó">Válasz 2</div>
+                <div id="válasz3" class="kerdes kattintható rossz">Válasz 3</div>
+            </div>
+            <div id="kép">
+                <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
+            </div>
+        </div>
+        <div id="vezérlő">
+            <div class="gomb kattintható vissza">Vissza</div>
+            <div class="gomb kattintható előre">Előre</div>
+        </div>
+    </div>
+    <style>
+        div {
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        #külső {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: lightgoldenrodyellow;
+            border-style: solid;
+            border-width: 5px;
+            border-color: lightcoral;
+        }
+        #kérdés_szöveg {
+            background-color: teal; 
+            min-height: 80px;
+            text-align: center;
+            font-size: 25px;
+            
+        }
+
+        #középső {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            background-color: coral; 
+            
+        }
+
+        #válaszok {
+            flex-grow: 1;
+            flex-shrink: 1;
+            background-color: teal;
+            border-style: solid;
+            border-width: 5px;
+            border-color: lightcoral;
+        }
+
+        #vezérlő {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #kép {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        .gomb {
+            padding: 20px;
+            width: 80px;
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        .kerdes {
+        }
+        html, body{
+            height: 100%;
+            background-color: lightgrey;
+        }
+        .kattintható:hover {
+            background-color: cadetblue;
+            color: white;
+        }
+        .jó{
+            background-color: mediumseagreen;
+            
+        }
+        .rossz {
+            background-color: coral;
+            
+        }
+        .vissza{
+            background-color: teal;
+            border-color: coral;
+        }
+        .előre{
+            background-color: coral;
+            border-color: lightcoral;
+        }
+    </style>
+</body>
+</html>
