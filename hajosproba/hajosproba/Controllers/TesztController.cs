@@ -22,5 +22,18 @@ namespace hajosproba.Controllers
 
             return new JsonResult(kérdések);
         }
+        public ActionResult M2(int sorszam)
+        {
+            HajosteszContext context = new HajosteszContext();
+            var kerdes = (from x in context.Questions
+                          where x.QuestionId == sorszam
+                          select x).FirstOrDefault();
+            if (kerdes == null)
+            {
+                return BadRequest("Nincs ilyen sorszámú kérdés");
+            }
+
+            return new JsonResult(kerdes);
+        }
     }
 }
